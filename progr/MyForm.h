@@ -2,6 +2,7 @@
 #include <string>
 #include <tuple>
 #include "links.h"
+#include "costs.h"
 
 
 namespace progr {
@@ -35,7 +36,7 @@ namespace progr {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Button^ button1;
+
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ label3;
@@ -63,6 +64,8 @@ namespace progr {
 	private: System::Windows::Forms::Label^ label25;
 	private: System::Windows::Forms::Label^ label26;
 	private: System::Windows::Forms::Label^ label27;
+	private: System::Windows::Forms::Button^ button2;
+
 	protected:
 
 	private:
@@ -78,7 +81,7 @@ namespace progr {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->button1 = (gcnew System::Windows::Forms::Button());
+			CostsIni();
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
@@ -106,17 +109,8 @@ namespace progr {
 			this->label25 = (gcnew System::Windows::Forms::Label());
 			this->label26 = (gcnew System::Windows::Forms::Label());
 			this->label27 = (gcnew System::Windows::Forms::Label());
+			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
-			// 
-			// button1
-			// 
-			this->button1->Location = System::Drawing::Point(676, 528);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(77, 65);
-			this->button1->TabIndex = 0;
-			this->button1->Text = L"Поиск";
-			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 			// 
 			// label1
 			// 
@@ -361,11 +355,22 @@ namespace progr {
 			this->label27->TabIndex = 27;
 			this->label27->Text = L"Медь";
 			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(649, 415);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(75, 23);
+			this->button2->TabIndex = 28;
+			this->button2->Text = L"button2";
+			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(765, 605);
+			this->Controls->Add(this->button2);
 			this->Controls->Add(this->label27);
 			this->Controls->Add(this->label26);
 			this->Controls->Add(this->label25);
@@ -393,7 +398,6 @@ namespace progr {
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
-			this->Controls->Add(this->button1);
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
 			this->ResumeLayout(false);
@@ -405,56 +409,42 @@ namespace progr {
 		void webresOpen();
 		std::string MyForm::webresOutput(void);
 		std::tuple<int, int, int> findMetals(std::string text);
-	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-		
+		void CostsIni();
+		void FresultsIni(std::array<std::tuple<int, int, int>, 6> resultsIni);
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+		std::array<std::tuple<int, int, int>, 6> resultsIni;
+		for (size_t i = 0; i < data.size(); ++i) {
+			cpp_web_urlInput(data[i]);
+			webresOpen();
+			std::string text = webresOutput();
+			resultsIni[i] = findMetals(text);
+		};
+		FresultsIni(resultsIni);
+		CostsIni();
 		//Рубин
-		cpp_web_urlInput(data1);
-		webresOpen();
-		std::string text1 = webresOutput();
-		auto [gold1, silver1, copper1] = findMetals(text1);
 		label1->Text = gold1.ToString();
 		label2->Text = silver1.ToString();
 		label3->Text = copper1.ToString();
 		//Янтарь
-		cpp_web_urlInput(data2);
-		webresOpen();
-		std::string text2 = webresOutput();
-		auto [gold2, silver2, copper2] = findMetals(text2);
 		label4->Text = gold2.ToString();
 		label5->Text = silver2.ToString();
 		label6->Text = copper2.ToString();
 		//Око
-		cpp_web_urlInput(data3);
-		webresOpen();
-		std::string text3 = webresOutput();
-		auto [gold3, silver3, copper3] = findMetals(text3);
 		label7->Text = gold3.ToString();
 		label8->Text = silver3.ToString();
 		label9->Text = copper3.ToString();
 		//Изумруд
-		cpp_web_urlInput(data4);
-		webresOpen();
-		std::string text4 = webresOutput();
-		auto [gold4, silver4, copper4] = findMetals(text4);
 		label10->Text = gold4.ToString();
 		label11->Text = silver4.ToString();
 		label12->Text = copper4.ToString();
 		//Топаз
-		cpp_web_urlInput(data5);
-		webresOpen();
-		std::string text5 = webresOutput();
-		auto [gold5, silver5, copper5] = findMetals(text5);
 		label13->Text = gold5.ToString();
 		label14->Text = silver5.ToString();
 		label15->Text = copper5.ToString();
 		//Сапфир
-		cpp_web_urlInput(data6);
-		webresOpen();
-		std::string text6 = webresOutput();
-		auto [gold6, silver6, copper6] = findMetals(text6);
 		label16->Text = gold6.ToString();
 		label17->Text = silver6.ToString();
 		label18->Text = copper6.ToString();
 	}
-	};
+};
 }

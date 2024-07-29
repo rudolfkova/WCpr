@@ -23,16 +23,16 @@ namespace WebScrapingWithSelenium
                         // Здесь можно ничего не делать, файл будет пустым
                     }
 
-                    Console.WriteLine("Файл успешно создан.");
+                    Console.WriteLine("web_script: The file was created successfully.");
                 }
                 else
                 {
-                    Console.WriteLine("Файл уже существует. Ничего не делаем.");
+                    Console.WriteLine("web_script: The file already exists.");
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Произошла ошибка: " + ex.Message);
+                Console.WriteLine("web_script: Error: " + ex.Message);
             }
 
             // Укажите путь к вашему текстовому файлу
@@ -94,7 +94,7 @@ namespace WebScrapingWithSelenium
                     writer.WriteLine($"Number 2: {number2}");
                 }
 
-                Console.WriteLine("Data saved to webres.txt");
+                Console.WriteLine("web_script: Data saved to webres.txt");
             }
             finally
             {

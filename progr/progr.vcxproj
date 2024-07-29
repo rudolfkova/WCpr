@@ -162,6 +162,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Costs.cpp" />
     <ClCompile Include="links.cpp" />
     <ClCompile Include="MyForm.cpp" />
     <ClCompile Include="Source.cpp" />
@@ -174,6 +175,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="costs.h" />
     <ClInclude Include="links.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>

@@ -5,6 +5,7 @@
 #include "MyForm.h"
 #include <regex>
 #include <tuple>
+#include "costs.h"
 
 using namespace progr;
 
