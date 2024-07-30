@@ -21,6 +21,9 @@ extern std::string oredata2;
 extern std::string oredata3;
 extern std::array<std::string, 3> oredata;
 
+extern std::string edata;
+extern std::array<std::string, 1> edata1;
+
 //!÷ены на обычные камни!...................................................
 //—сылки
 extern std::string udata1;

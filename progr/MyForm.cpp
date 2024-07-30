@@ -125,3 +125,17 @@ std::tuple<int, int, int> MyForm::findMetals(std::string text) {
     // Возврат значений в виде кортежа
     return std::make_tuple(gold, silver, copper);
 };
+
+//Обработка цен..........................................
+//Вычисление прибыли
+int MyForm::costsSum(const std::vector<int> vec, int multiplier) {
+    int sum = 0;
+
+    // Суммируем все элементы вектора
+    for (int num : vec) {
+        sum += num;
+    }
+    std::cout << sum * multiplier << std::endl;
+    // Умножаем сумму на переданное целое число
+    return sum * multiplier;
+}

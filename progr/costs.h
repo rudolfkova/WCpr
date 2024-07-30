@@ -1,6 +1,7 @@
 #pragma once
 #include <array>
 #include <tuple>
+#include <vector>
 
 
 // Цены на редкие камни....................................................................
@@ -28,6 +29,8 @@ extern int copper6;
 extern std::array<std::tuple<int, int, int>, 6> results;
 void CostsIni();
 
+extern std::vector<int> costs;
+
 
 // Цены на руды....................................................................
 extern int oregold1;
@@ -44,6 +47,17 @@ extern int orecopper3;
 
 extern std::array<std::tuple<int, int, int>, 3> oreresults;
 void oreCostsIni();
+
+extern std::vector<int> orecosts;
+
+extern int egold;
+extern int esilver;
+extern int ecopper;
+
+extern std::array<std::tuple<int, int, int>, 1> eresult;
+void eCostIni();
+
+extern std::vector<int> ecost;
 
 
 // Цены на обычные камни...........................................................
@@ -70,3 +84,5 @@ extern int ucopper6;
 
 extern std::array<std::tuple<int, int, int>, 6> uresults;
 void uCostsIni();
+
+extern std::vector<int> ucosts;

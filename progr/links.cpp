@@ -15,6 +15,9 @@ std::string oredata2 = "https://www.wowauctions.net/auctionHouse/classic-eu/flam
 std::string oredata3 = "https://www.wowauctions.net/auctionHouse/classic-eu/flamegor-eu/alliance/обсидиановая-руда-53038";
 std::array<std::string, 3> oredata = { oredata1, oredata2, oredata3 };
 
+std::string edata = "https://www.wowauctions.net/auctionHouse/classic-eu/flamegor-eu/alliance/неустойчивая-земля-52327";
+std::array<std::string, 1> edata1 = { edata };
+
 //Цены на обычные камни.............................................................
 std::string udata1 = "https://www.wowauctions.net/auctionHouse/classic-eu/flamegor-eu/alliance/сердолик-52177";
 std::string udata2 = "https://www.wowauctions.net/auctionHouse/classic-eu/flamegor-eu/alliance/гессонит-52181";
