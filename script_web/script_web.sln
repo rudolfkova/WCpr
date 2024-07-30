@@ -9,12 +9,15 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "progr", "..\progr\progr.vcx
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{D85476E5-65DC-4D10-9252-AE5B3C66A019}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\OneDrive\Рабочий стол\WCpr\cpp_web_url.txt = ..\..\..\OneDrive\Рабочий стол\WCpr\cpp_web_url.txt
-		..\..\..\OneDrive\Рабочий стол\WCpr\webres.txt = ..\..\..\OneDrive\Рабочий стол\WCpr\webres.txt
+		..\..\OneDrive\Рабочий стол\WCpr\cpp_web_url.txt = ..\..\OneDrive\Рабочий стол\WCpr\cpp_web_url.txt
+		..\..\OneDrive\Рабочий стол\WCpr\webres.txt = ..\..\OneDrive\Рабочий стол\WCpr\webres.txt
 	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		DD|Any CPU = DD|Any CPU
+		DD|x64 = DD|x64
+		DD|x86 = DD|x86
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
@@ -26,6 +29,12 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03F5EDD8-EF0D-4388-9ED9-6308BE48E3CE}.DD|Any CPU.ActiveCfg = DD|Any CPU
+		{03F5EDD8-EF0D-4388-9ED9-6308BE48E3CE}.DD|Any CPU.Build.0 = DD|Any CPU
+		{03F5EDD8-EF0D-4388-9ED9-6308BE48E3CE}.DD|x64.ActiveCfg = DD|x64
+		{03F5EDD8-EF0D-4388-9ED9-6308BE48E3CE}.DD|x64.Build.0 = DD|x64
+		{03F5EDD8-EF0D-4388-9ED9-6308BE48E3CE}.DD|x86.ActiveCfg = DD|Any CPU
+		{03F5EDD8-EF0D-4388-9ED9-6308BE48E3CE}.DD|x86.Build.0 = DD|Any CPU
 		{03F5EDD8-EF0D-4388-9ED9-6308BE48E3CE}.Debug|Any CPU.ActiveCfg = Debug|x64
 		{03F5EDD8-EF0D-4388-9ED9-6308BE48E3CE}.Debug|Any CPU.Build.0 = Debug|x64
 		{03F5EDD8-EF0D-4388-9ED9-6308BE48E3CE}.Debug|x64.ActiveCfg = Debug|x64
@@ -40,10 +49,16 @@ Global
 		{03F5EDD8-EF0D-4388-9ED9-6308BE48E3CE}.Direct|x86.Build.0 = Direct|Any CPU
 		{03F5EDD8-EF0D-4388-9ED9-6308BE48E3CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03F5EDD8-EF0D-4388-9ED9-6308BE48E3CE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{03F5EDD8-EF0D-4388-9ED9-6308BE48E3CE}.Release|x64.ActiveCfg = Release|Any CPU
-		{03F5EDD8-EF0D-4388-9ED9-6308BE48E3CE}.Release|x64.Build.0 = Release|Any CPU
+		{03F5EDD8-EF0D-4388-9ED9-6308BE48E3CE}.Release|x64.ActiveCfg = Release|x64
+		{03F5EDD8-EF0D-4388-9ED9-6308BE48E3CE}.Release|x64.Build.0 = Release|x64
 		{03F5EDD8-EF0D-4388-9ED9-6308BE48E3CE}.Release|x86.ActiveCfg = Release|Any CPU
 		{03F5EDD8-EF0D-4388-9ED9-6308BE48E3CE}.Release|x86.Build.0 = Release|Any CPU
+		{3313C014-53F7-4FF5-B172-AF86B5BE6446}.DD|Any CPU.ActiveCfg = DD|x64
+		{3313C014-53F7-4FF5-B172-AF86B5BE6446}.DD|Any CPU.Build.0 = DD|x64
+		{3313C014-53F7-4FF5-B172-AF86B5BE6446}.DD|x64.ActiveCfg = DD|x64
+		{3313C014-53F7-4FF5-B172-AF86B5BE6446}.DD|x64.Build.0 = DD|x64
+		{3313C014-53F7-4FF5-B172-AF86B5BE6446}.DD|x86.ActiveCfg = DD|Win32
+		{3313C014-53F7-4FF5-B172-AF86B5BE6446}.DD|x86.Build.0 = DD|Win32
 		{3313C014-53F7-4FF5-B172-AF86B5BE6446}.Debug|Any CPU.ActiveCfg = Debug|x64
 		{3313C014-53F7-4FF5-B172-AF86B5BE6446}.Debug|Any CPU.Build.0 = Debug|x64
 		{3313C014-53F7-4FF5-B172-AF86B5BE6446}.Debug|x64.ActiveCfg = Debug|x64

@@ -131,6 +131,35 @@ private: System::Windows::Forms::Label^ label78;
 private: System::Windows::Forms::Label^ label79;
 private: System::Windows::Forms::Label^ label80;
 private: System::Windows::Forms::Label^ label81;
+private: System::Windows::Forms::GroupBox^ groupBox5;
+private: System::Windows::Forms::GroupBox^ groupBox6;
+private: System::Windows::Forms::Button^ button5;
+private: System::Windows::Forms::Button^ button6;
+private: System::Windows::Forms::Label^ label87;
+private: System::Windows::Forms::Label^ label86;
+private: System::Windows::Forms::Label^ label90;
+private: System::Windows::Forms::Label^ label89;
+private: System::Windows::Forms::Label^ label88;
+private: System::Windows::Forms::Label^ label92;
+private: System::Windows::Forms::Label^ label93;
+private: System::Windows::Forms::Label^ label94;
+private: System::Windows::Forms::Label^ label95;
+private: System::Windows::Forms::Label^ label96;
+
+private: System::Windows::Forms::Label^ label106;
+private: System::Windows::Forms::Label^ label105;
+private: System::Windows::Forms::Label^ label104;
+private: System::Windows::Forms::Label^ label103;
+private: System::Windows::Forms::Label^ label102;
+private: System::Windows::Forms::Label^ label101;
+private: System::Windows::Forms::Label^ label97;
+private: System::Windows::Forms::Label^ label100;
+private: System::Windows::Forms::Label^ label98;
+private: System::Windows::Forms::Label^ label99;
+private: System::Windows::Forms::PictureBox^ pictureBox1;
+
+
+private: System::ComponentModel::IContainer^ components;
 
 
 
@@ -140,7 +169,7 @@ private: System::Windows::Forms::Label^ label81;
 		/// <summary>
 		/// Обязательная переменная конструктора.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -149,6 +178,7 @@ private: System::Windows::Forms::Label^ label81;
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
@@ -195,11 +225,11 @@ private: System::Windows::Forms::Label^ label81;
 			this->label35 = (gcnew System::Windows::Forms::Label());
 			this->label36 = (gcnew System::Windows::Forms::Label());
 			this->label37 = (gcnew System::Windows::Forms::Label());
-			this->label38 = (gcnew System::Windows::Forms::Label());
-			this->label39 = (gcnew System::Windows::Forms::Label());
 			this->label40 = (gcnew System::Windows::Forms::Label());
 			this->label41 = (gcnew System::Windows::Forms::Label());
+			this->label38 = (gcnew System::Windows::Forms::Label());
 			this->label42 = (gcnew System::Windows::Forms::Label());
+			this->label39 = (gcnew System::Windows::Forms::Label());
 			this->groupBox3 = (gcnew System::Windows::Forms::GroupBox());
 			this->label52 = (gcnew System::Windows::Forms::Label());
 			this->label53 = (gcnew System::Windows::Forms::Label());
@@ -234,18 +264,46 @@ private: System::Windows::Forms::Label^ label81;
 			this->label76 = (gcnew System::Windows::Forms::Label());
 			this->label77 = (gcnew System::Windows::Forms::Label());
 			this->groupBox4 = (gcnew System::Windows::Forms::GroupBox());
+			this->label82 = (gcnew System::Windows::Forms::Label());
+			this->label85 = (gcnew System::Windows::Forms::Label());
+			this->label84 = (gcnew System::Windows::Forms::Label());
+			this->label83 = (gcnew System::Windows::Forms::Label());
 			this->label78 = (gcnew System::Windows::Forms::Label());
 			this->label79 = (gcnew System::Windows::Forms::Label());
 			this->label80 = (gcnew System::Windows::Forms::Label());
 			this->label81 = (gcnew System::Windows::Forms::Label());
-			this->label82 = (gcnew System::Windows::Forms::Label());
-			this->label83 = (gcnew System::Windows::Forms::Label());
-			this->label84 = (gcnew System::Windows::Forms::Label());
-			this->label85 = (gcnew System::Windows::Forms::Label());
+			this->groupBox5 = (gcnew System::Windows::Forms::GroupBox());
+			this->label106 = (gcnew System::Windows::Forms::Label());
+			this->label105 = (gcnew System::Windows::Forms::Label());
+			this->label104 = (gcnew System::Windows::Forms::Label());
+			this->label103 = (gcnew System::Windows::Forms::Label());
+			this->label102 = (gcnew System::Windows::Forms::Label());
+			this->label101 = (gcnew System::Windows::Forms::Label());
+			this->label97 = (gcnew System::Windows::Forms::Label());
+			this->label100 = (gcnew System::Windows::Forms::Label());
+			this->label98 = (gcnew System::Windows::Forms::Label());
+			this->label99 = (gcnew System::Windows::Forms::Label());
+			this->groupBox6 = (gcnew System::Windows::Forms::GroupBox());
+			this->label92 = (gcnew System::Windows::Forms::Label());
+			this->label93 = (gcnew System::Windows::Forms::Label());
+			this->label94 = (gcnew System::Windows::Forms::Label());
+			this->label95 = (gcnew System::Windows::Forms::Label());
+			this->label96 = (gcnew System::Windows::Forms::Label());
+			this->label90 = (gcnew System::Windows::Forms::Label());
+			this->label89 = (gcnew System::Windows::Forms::Label());
+			this->label88 = (gcnew System::Windows::Forms::Label());
+			this->label87 = (gcnew System::Windows::Forms::Label());
+			this->label86 = (gcnew System::Windows::Forms::Label());
+			this->button5 = (gcnew System::Windows::Forms::Button());
+			this->button6 = (gcnew System::Windows::Forms::Button());
+			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->groupBox1->SuspendLayout();
 			this->groupBox2->SuspendLayout();
 			this->groupBox3->SuspendLayout();
 			this->groupBox4->SuspendLayout();
+			this->groupBox5->SuspendLayout();
+			this->groupBox6->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// label1
@@ -493,7 +551,7 @@ private: System::Windows::Forms::Label^ label81;
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(842, 288);
+			this->button2->Location = System::Drawing::Point(872, 322);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(75, 23);
 			this->button2->TabIndex = 28;
@@ -503,7 +561,7 @@ private: System::Windows::Forms::Label^ label81;
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(523, 620);
+			this->button1->Location = System::Drawing::Point(157, 654);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(75, 23);
 			this->button1->TabIndex = 29;
@@ -513,7 +571,7 @@ private: System::Windows::Forms::Label^ label81;
 			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(523, 288);
+			this->button3->Location = System::Drawing::Point(553, 322);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(75, 23);
 			this->button3->TabIndex = 30;
@@ -542,7 +600,7 @@ private: System::Windows::Forms::Label^ label81;
 			// label30
 			// 
 			this->label30->AutoSize = true;
-			this->label30->Location = System::Drawing::Point(13, 55);
+			this->label30->Location = System::Drawing::Point(13, 84);
 			this->label30->Name = L"label30";
 			this->label30->Size = System::Drawing::Size(81, 16);
 			this->label30->TabIndex = 33;
@@ -551,7 +609,7 @@ private: System::Windows::Forms::Label^ label81;
 			// label31
 			// 
 			this->label31->AutoSize = true;
-			this->label31->Location = System::Drawing::Point(23, 84);
+			this->label31->Location = System::Drawing::Point(23, 55);
 			this->label31->Name = L"label31";
 			this->label31->Size = System::Drawing::Size(71, 16);
 			this->label31->TabIndex = 34;
@@ -604,7 +662,7 @@ private: System::Windows::Forms::Label^ label81;
 			this->groupBox1->Controls->Add(this->label17);
 			this->groupBox1->Controls->Add(this->label19);
 			this->groupBox1->Controls->Add(this->label18);
-			this->groupBox1->Location = System::Drawing::Point(604, 12);
+			this->groupBox1->Location = System::Drawing::Point(634, 46);
 			this->groupBox1->Name = L"groupBox1";
 			this->groupBox1->Size = System::Drawing::Size(313, 270);
 			this->groupBox1->TabIndex = 37;
@@ -621,18 +679,18 @@ private: System::Windows::Forms::Label^ label81;
 			this->groupBox2->Controls->Add(this->label35);
 			this->groupBox2->Controls->Add(this->label36);
 			this->groupBox2->Controls->Add(this->label37);
-			this->groupBox2->Controls->Add(this->label38);
-			this->groupBox2->Controls->Add(this->label39);
 			this->groupBox2->Controls->Add(this->label40);
 			this->groupBox2->Controls->Add(this->label41);
+			this->groupBox2->Controls->Add(this->label38);
 			this->groupBox2->Controls->Add(this->label42);
 			this->groupBox2->Controls->Add(this->label32);
-			this->groupBox2->Controls->Add(this->label31);
+			this->groupBox2->Controls->Add(this->label39);
 			this->groupBox2->Controls->Add(this->label33);
 			this->groupBox2->Controls->Add(this->label30);
 			this->groupBox2->Controls->Add(this->label28);
 			this->groupBox2->Controls->Add(this->label29);
-			this->groupBox2->Location = System::Drawing::Point(280, 12);
+			this->groupBox2->Controls->Add(this->label31);
+			this->groupBox2->Location = System::Drawing::Point(310, 46);
 			this->groupBox2->Name = L"groupBox2";
 			this->groupBox2->Size = System::Drawing::Size(318, 270);
 			this->groupBox2->TabIndex = 38;
@@ -678,7 +736,7 @@ private: System::Windows::Forms::Label^ label81;
 			// label34
 			// 
 			this->label34->AutoSize = true;
-			this->label34->Location = System::Drawing::Point(110, 55);
+			this->label34->Location = System::Drawing::Point(110, 84);
 			this->label34->Name = L"label34";
 			this->label34->Size = System::Drawing::Size(51, 16);
 			this->label34->TabIndex = 39;
@@ -687,7 +745,7 @@ private: System::Windows::Forms::Label^ label81;
 			// label35
 			// 
 			this->label35->AutoSize = true;
-			this->label35->Location = System::Drawing::Point(177, 55);
+			this->label35->Location = System::Drawing::Point(177, 84);
 			this->label35->Name = L"label35";
 			this->label35->Size = System::Drawing::Size(51, 16);
 			this->label35->TabIndex = 40;
@@ -696,7 +754,7 @@ private: System::Windows::Forms::Label^ label81;
 			// label36
 			// 
 			this->label36->AutoSize = true;
-			this->label36->Location = System::Drawing::Point(247, 55);
+			this->label36->Location = System::Drawing::Point(247, 84);
 			this->label36->Name = L"label36";
 			this->label36->Size = System::Drawing::Size(51, 16);
 			this->label36->TabIndex = 41;
@@ -705,29 +763,11 @@ private: System::Windows::Forms::Label^ label81;
 			// label37
 			// 
 			this->label37->AutoSize = true;
-			this->label37->Location = System::Drawing::Point(110, 84);
+			this->label37->Location = System::Drawing::Point(110, 55);
 			this->label37->Name = L"label37";
 			this->label37->Size = System::Drawing::Size(51, 16);
 			this->label37->TabIndex = 42;
 			this->label37->Text = L"label37";
-			// 
-			// label38
-			// 
-			this->label38->AutoSize = true;
-			this->label38->Location = System::Drawing::Point(177, 84);
-			this->label38->Name = L"label38";
-			this->label38->Size = System::Drawing::Size(51, 16);
-			this->label38->TabIndex = 43;
-			this->label38->Text = L"label38";
-			// 
-			// label39
-			// 
-			this->label39->AutoSize = true;
-			this->label39->Location = System::Drawing::Point(247, 84);
-			this->label39->Name = L"label39";
-			this->label39->Size = System::Drawing::Size(51, 16);
-			this->label39->TabIndex = 44;
-			this->label39->Text = L"label39";
 			// 
 			// label40
 			// 
@@ -747,6 +787,15 @@ private: System::Windows::Forms::Label^ label81;
 			this->label41->TabIndex = 46;
 			this->label41->Text = L"label41";
 			// 
+			// label38
+			// 
+			this->label38->AutoSize = true;
+			this->label38->Location = System::Drawing::Point(177, 55);
+			this->label38->Name = L"label38";
+			this->label38->Size = System::Drawing::Size(51, 16);
+			this->label38->TabIndex = 43;
+			this->label38->Text = L"label38";
+			// 
 			// label42
 			// 
 			this->label42->AutoSize = true;
@@ -755,6 +804,15 @@ private: System::Windows::Forms::Label^ label81;
 			this->label42->Size = System::Drawing::Size(51, 16);
 			this->label42->TabIndex = 47;
 			this->label42->Text = L"label42";
+			// 
+			// label39
+			// 
+			this->label39->AutoSize = true;
+			this->label39->Location = System::Drawing::Point(247, 55);
+			this->label39->Name = L"label39";
+			this->label39->Size = System::Drawing::Size(51, 16);
+			this->label39->TabIndex = 44;
+			this->label39->Text = L"label39";
 			// 
 			// groupBox3
 			// 
@@ -785,7 +843,7 @@ private: System::Windows::Forms::Label^ label81;
 			this->groupBox3->Controls->Add(this->label45);
 			this->groupBox3->Controls->Add(this->label44);
 			this->groupBox3->Controls->Add(this->label43);
-			this->groupBox3->Location = System::Drawing::Point(604, 338);
+			this->groupBox3->Location = System::Drawing::Point(634, 372);
 			this->groupBox3->Name = L"groupBox3";
 			this->groupBox3->Size = System::Drawing::Size(313, 276);
 			this->groupBox3->TabIndex = 39;
@@ -1037,7 +1095,7 @@ private: System::Windows::Forms::Label^ label81;
 			// 
 			// button4
 			// 
-			this->button4->Location = System::Drawing::Point(842, 620);
+			this->button4->Location = System::Drawing::Point(872, 654);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(75, 23);
 			this->button4->TabIndex = 40;
@@ -1048,7 +1106,7 @@ private: System::Windows::Forms::Label^ label81;
 			// label71
 			// 
 			this->label71->AutoSize = true;
-			this->label71->Location = System::Drawing::Point(91, 66);
+			this->label71->Location = System::Drawing::Point(91, 78);
 			this->label71->Name = L"label71";
 			this->label71->Size = System::Drawing::Size(51, 16);
 			this->label71->TabIndex = 43;
@@ -1057,7 +1115,7 @@ private: System::Windows::Forms::Label^ label81;
 			// label70
 			// 
 			this->label70->AutoSize = true;
-			this->label70->Location = System::Drawing::Point(91, 36);
+			this->label70->Location = System::Drawing::Point(91, 48);
 			this->label70->Name = L"label70";
 			this->label70->Size = System::Drawing::Size(51, 16);
 			this->label70->TabIndex = 42;
@@ -1066,7 +1124,7 @@ private: System::Windows::Forms::Label^ label81;
 			// label76
 			// 
 			this->label76->AutoSize = true;
-			this->label76->Location = System::Drawing::Point(91, 98);
+			this->label76->Location = System::Drawing::Point(91, 110);
 			this->label76->Name = L"label76";
 			this->label76->Size = System::Drawing::Size(51, 16);
 			this->label76->TabIndex = 48;
@@ -1077,7 +1135,7 @@ private: System::Windows::Forms::Label^ label81;
 			this->label77->AutoSize = true;
 			this->label77->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
 				static_cast<System::Int32>(static_cast<System::Byte>(0)));
-			this->label77->Location = System::Drawing::Point(91, 131);
+			this->label77->Location = System::Drawing::Point(91, 143);
 			this->label77->Name = L"label77";
 			this->label77->Size = System::Drawing::Size(51, 16);
 			this->label77->TabIndex = 49;
@@ -1097,50 +1155,12 @@ private: System::Windows::Forms::Label^ label81;
 			this->groupBox4->Controls->Add(this->label70);
 			this->groupBox4->Controls->Add(this->label76);
 			this->groupBox4->Controls->Add(this->label71);
-			this->groupBox4->Location = System::Drawing::Point(23, 338);
+			this->groupBox4->Location = System::Drawing::Point(53, 372);
 			this->groupBox4->Name = L"groupBox4";
-			this->groupBox4->Size = System::Drawing::Size(179, 265);
+			this->groupBox4->Size = System::Drawing::Size(179, 276);
 			this->groupBox4->TabIndex = 50;
 			this->groupBox4->TabStop = false;
 			this->groupBox4->Text = L"Колчедан";
-			// 
-			// label78
-			// 
-			this->label78->AutoSize = true;
-			this->label78->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
-				static_cast<System::Int32>(static_cast<System::Byte>(0)));
-			this->label78->Location = System::Drawing::Point(9, 131);
-			this->label78->Name = L"label78";
-			this->label78->Size = System::Drawing::Size(64, 16);
-			this->label78->TabIndex = 51;
-			this->label78->Text = L"Выручка";
-			// 
-			// label79
-			// 
-			this->label79->AutoSize = true;
-			this->label79->Location = System::Drawing::Point(25, 98);
-			this->label79->Name = L"label79";
-			this->label79->Size = System::Drawing::Size(48, 16);
-			this->label79->TabIndex = 52;
-			this->label79->Text = L"Земля";
-			// 
-			// label80
-			// 
-			this->label80->AutoSize = true;
-			this->label80->Location = System::Drawing::Point(6, 66);
-			this->label80->Name = L"label80";
-			this->label80->Size = System::Drawing::Size(67, 16);
-			this->label80->TabIndex = 53;
-			this->label80->Text = L"Обычные";
-			// 
-			// label81
-			// 
-			this->label81->AutoSize = true;
-			this->label81->Location = System::Drawing::Point(18, 36);
-			this->label81->Name = L"label81";
-			this->label81->Size = System::Drawing::Size(55, 16);
-			this->label81->TabIndex = 54;
-			this->label81->Text = L"Редкие";
 			// 
 			// label82
 			// 
@@ -1152,26 +1172,6 @@ private: System::Windows::Forms::Label^ label81;
 			this->label82->TabIndex = 51;
 			this->label82->Text = L"label82";
 			// 
-			// label83
-			// 
-			this->label83->AutoSize = true;
-			this->label83->ForeColor = System::Drawing::Color::Red;
-			this->label83->Location = System::Drawing::Point(11, 159);
-			this->label83->Name = L"label83";
-			this->label83->Size = System::Drawing::Size(62, 16);
-			this->label83->TabIndex = 52;
-			this->label83->Text = L"Расходы";
-			// 
-			// label84
-			// 
-			this->label84->AutoSize = true;
-			this->label84->ForeColor = System::Drawing::Color::Red;
-			this->label84->Location = System::Drawing::Point(91, 159);
-			this->label84->Name = L"label84";
-			this->label84->Size = System::Drawing::Size(51, 16);
-			this->label84->TabIndex = 52;
-			this->label84->Text = L"label84";
-			// 
 			// label85
 			// 
 			this->label85->AutoSize = true;
@@ -1182,11 +1182,338 @@ private: System::Windows::Forms::Label^ label81;
 			this->label85->TabIndex = 52;
 			this->label85->Text = L"Прибыль";
 			// 
+			// label84
+			// 
+			this->label84->AutoSize = true;
+			this->label84->ForeColor = System::Drawing::Color::Red;
+			this->label84->Location = System::Drawing::Point(91, 171);
+			this->label84->Name = L"label84";
+			this->label84->Size = System::Drawing::Size(51, 16);
+			this->label84->TabIndex = 52;
+			this->label84->Text = L"label84";
+			// 
+			// label83
+			// 
+			this->label83->AutoSize = true;
+			this->label83->ForeColor = System::Drawing::Color::Red;
+			this->label83->Location = System::Drawing::Point(11, 171);
+			this->label83->Name = L"label83";
+			this->label83->Size = System::Drawing::Size(62, 16);
+			this->label83->TabIndex = 52;
+			this->label83->Text = L"Расходы";
+			// 
+			// label78
+			// 
+			this->label78->AutoSize = true;
+			this->label78->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->label78->Location = System::Drawing::Point(9, 143);
+			this->label78->Name = L"label78";
+			this->label78->Size = System::Drawing::Size(64, 16);
+			this->label78->TabIndex = 51;
+			this->label78->Text = L"Выручка";
+			// 
+			// label79
+			// 
+			this->label79->AutoSize = true;
+			this->label79->Location = System::Drawing::Point(25, 110);
+			this->label79->Name = L"label79";
+			this->label79->Size = System::Drawing::Size(48, 16);
+			this->label79->TabIndex = 52;
+			this->label79->Text = L"Земля";
+			// 
+			// label80
+			// 
+			this->label80->AutoSize = true;
+			this->label80->Location = System::Drawing::Point(6, 78);
+			this->label80->Name = L"label80";
+			this->label80->Size = System::Drawing::Size(67, 16);
+			this->label80->TabIndex = 53;
+			this->label80->Text = L"Обычные";
+			// 
+			// label81
+			// 
+			this->label81->AutoSize = true;
+			this->label81->Location = System::Drawing::Point(18, 48);
+			this->label81->Name = L"label81";
+			this->label81->Size = System::Drawing::Size(55, 16);
+			this->label81->TabIndex = 54;
+			this->label81->Text = L"Редкие";
+			// 
+			// groupBox5
+			// 
+			this->groupBox5->Controls->Add(this->label106);
+			this->groupBox5->Controls->Add(this->label105);
+			this->groupBox5->Controls->Add(this->label104);
+			this->groupBox5->Controls->Add(this->label103);
+			this->groupBox5->Controls->Add(this->label102);
+			this->groupBox5->Controls->Add(this->label101);
+			this->groupBox5->Controls->Add(this->label97);
+			this->groupBox5->Controls->Add(this->label100);
+			this->groupBox5->Controls->Add(this->label98);
+			this->groupBox5->Controls->Add(this->label99);
+			this->groupBox5->Location = System::Drawing::Point(435, 372);
+			this->groupBox5->Name = L"groupBox5";
+			this->groupBox5->Size = System::Drawing::Size(193, 276);
+			this->groupBox5->TabIndex = 51;
+			this->groupBox5->TabStop = false;
+			this->groupBox5->Text = L"Обсидиан";
+			// 
+			// label106
+			// 
+			this->label106->AutoSize = true;
+			this->label106->ForeColor = System::Drawing::Color::Blue;
+			this->label106->Location = System::Drawing::Point(11, 228);
+			this->label106->Name = L"label106";
+			this->label106->Size = System::Drawing::Size(65, 16);
+			this->label106->TabIndex = 64;
+			this->label106->Text = L"Прибыль";
+			// 
+			// label105
+			// 
+			this->label105->AutoSize = true;
+			this->label105->ForeColor = System::Drawing::Color::Red;
+			this->label105->Location = System::Drawing::Point(14, 171);
+			this->label105->Name = L"label105";
+			this->label105->Size = System::Drawing::Size(62, 16);
+			this->label105->TabIndex = 63;
+			this->label105->Text = L"Расходы";
+			// 
+			// label104
+			// 
+			this->label104->AutoSize = true;
+			this->label104->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->label104->Location = System::Drawing::Point(12, 145);
+			this->label104->Name = L"label104";
+			this->label104->Size = System::Drawing::Size(64, 16);
+			this->label104->TabIndex = 62;
+			this->label104->Text = L"Выручка";
+			// 
+			// label103
+			// 
+			this->label103->AutoSize = true;
+			this->label103->Location = System::Drawing::Point(9, 80);
+			this->label103->Name = L"label103";
+			this->label103->Size = System::Drawing::Size(67, 16);
+			this->label103->TabIndex = 61;
+			this->label103->Text = L"Обычные";
+			// 
+			// label102
+			// 
+			this->label102->AutoSize = true;
+			this->label102->Location = System::Drawing::Point(21, 48);
+			this->label102->Name = L"label102";
+			this->label102->Size = System::Drawing::Size(55, 16);
+			this->label102->TabIndex = 60;
+			this->label102->Text = L"Редкие";
+			// 
+			// label101
+			// 
+			this->label101->AutoSize = true;
+			this->label101->ForeColor = System::Drawing::Color::Blue;
+			this->label101->Location = System::Drawing::Point(122, 228);
+			this->label101->Name = L"label101";
+			this->label101->Size = System::Drawing::Size(58, 16);
+			this->label101->TabIndex = 59;
+			this->label101->Text = L"label101";
+			// 
+			// label97
+			// 
+			this->label97->AutoSize = true;
+			this->label97->Location = System::Drawing::Point(122, 48);
+			this->label97->Name = L"label97";
+			this->label97->Size = System::Drawing::Size(51, 16);
+			this->label97->TabIndex = 55;
+			this->label97->Text = L"label97";
+			// 
+			// label100
+			// 
+			this->label100->AutoSize = true;
+			this->label100->ForeColor = System::Drawing::Color::Red;
+			this->label100->Location = System::Drawing::Point(122, 171);
+			this->label100->Name = L"label100";
+			this->label100->Size = System::Drawing::Size(58, 16);
+			this->label100->TabIndex = 58;
+			this->label100->Text = L"label100";
+			// 
+			// label98
+			// 
+			this->label98->AutoSize = true;
+			this->label98->Location = System::Drawing::Point(122, 78);
+			this->label98->Name = L"label98";
+			this->label98->Size = System::Drawing::Size(51, 16);
+			this->label98->TabIndex = 56;
+			this->label98->Text = L"label98";
+			// 
+			// label99
+			// 
+			this->label99->AutoSize = true;
+			this->label99->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->label99->Location = System::Drawing::Point(122, 143);
+			this->label99->Name = L"label99";
+			this->label99->Size = System::Drawing::Size(51, 16);
+			this->label99->TabIndex = 57;
+			this->label99->Text = L"label99";
+			// 
+			// groupBox6
+			// 
+			this->groupBox6->Controls->Add(this->label92);
+			this->groupBox6->Controls->Add(this->label93);
+			this->groupBox6->Controls->Add(this->label94);
+			this->groupBox6->Controls->Add(this->label95);
+			this->groupBox6->Controls->Add(this->label96);
+			this->groupBox6->Controls->Add(this->label90);
+			this->groupBox6->Controls->Add(this->label89);
+			this->groupBox6->Controls->Add(this->label88);
+			this->groupBox6->Controls->Add(this->label87);
+			this->groupBox6->Controls->Add(this->label86);
+			this->groupBox6->Location = System::Drawing::Point(238, 372);
+			this->groupBox6->Name = L"groupBox6";
+			this->groupBox6->Size = System::Drawing::Size(191, 276);
+			this->groupBox6->TabIndex = 0;
+			this->groupBox6->TabStop = false;
+			this->groupBox6->Text = L"Элементий";
+			// 
+			// label92
+			// 
+			this->label92->AutoSize = true;
+			this->label92->Location = System::Drawing::Point(16, 48);
+			this->label92->Name = L"label92";
+			this->label92->Size = System::Drawing::Size(55, 16);
+			this->label92->TabIndex = 55;
+			this->label92->Text = L"Редкие";
+			// 
+			// label93
+			// 
+			this->label93->AutoSize = true;
+			this->label93->Location = System::Drawing::Point(4, 78);
+			this->label93->Name = L"label93";
+			this->label93->Size = System::Drawing::Size(67, 16);
+			this->label93->TabIndex = 56;
+			this->label93->Text = L"Обычные";
+			// 
+			// label94
+			// 
+			this->label94->AutoSize = true;
+			this->label94->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->label94->Location = System::Drawing::Point(7, 143);
+			this->label94->Name = L"label94";
+			this->label94->Size = System::Drawing::Size(64, 16);
+			this->label94->TabIndex = 57;
+			this->label94->Text = L"Выручка";
+			// 
+			// label95
+			// 
+			this->label95->AutoSize = true;
+			this->label95->ForeColor = System::Drawing::Color::Red;
+			this->label95->Location = System::Drawing::Point(9, 171);
+			this->label95->Name = L"label95";
+			this->label95->Size = System::Drawing::Size(62, 16);
+			this->label95->TabIndex = 58;
+			this->label95->Text = L"Расходы";
+			// 
+			// label96
+			// 
+			this->label96->AutoSize = true;
+			this->label96->ForeColor = System::Drawing::Color::Blue;
+			this->label96->Location = System::Drawing::Point(6, 228);
+			this->label96->Name = L"label96";
+			this->label96->Size = System::Drawing::Size(65, 16);
+			this->label96->TabIndex = 59;
+			this->label96->Text = L"Прибыль";
+			// 
+			// label90
+			// 
+			this->label90->AutoSize = true;
+			this->label90->ForeColor = System::Drawing::Color::Blue;
+			this->label90->Location = System::Drawing::Point(115, 228);
+			this->label90->Name = L"label90";
+			this->label90->Size = System::Drawing::Size(51, 16);
+			this->label90->TabIndex = 58;
+			this->label90->Text = L"label90";
+			// 
+			// label89
+			// 
+			this->label89->AutoSize = true;
+			this->label89->ForeColor = System::Drawing::Color::Red;
+			this->label89->Location = System::Drawing::Point(115, 171);
+			this->label89->Name = L"label89";
+			this->label89->Size = System::Drawing::Size(51, 16);
+			this->label89->TabIndex = 57;
+			this->label89->Text = L"label89";
+			// 
+			// label88
+			// 
+			this->label88->AutoSize = true;
+			this->label88->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->label88->Location = System::Drawing::Point(115, 143);
+			this->label88->Name = L"label88";
+			this->label88->Size = System::Drawing::Size(51, 16);
+			this->label88->TabIndex = 56;
+			this->label88->Text = L"label88";
+			// 
+			// label87
+			// 
+			this->label87->AutoSize = true;
+			this->label87->Location = System::Drawing::Point(115, 78);
+			this->label87->Name = L"label87";
+			this->label87->Size = System::Drawing::Size(51, 16);
+			this->label87->TabIndex = 55;
+			this->label87->Text = L"label87";
+			// 
+			// label86
+			// 
+			this->label86->AutoSize = true;
+			this->label86->Location = System::Drawing::Point(115, 48);
+			this->label86->Name = L"label86";
+			this->label86->Size = System::Drawing::Size(51, 16);
+			this->label86->TabIndex = 54;
+			this->label86->Text = L"label86";
+			// 
+			// button5
+			// 
+			this->button5->Location = System::Drawing::Point(354, 654);
+			this->button5->Name = L"button5";
+			this->button5->Size = System::Drawing::Size(75, 23);
+			this->button5->TabIndex = 52;
+			this->button5->Text = L"Расчет";
+			this->button5->UseVisualStyleBackColor = true;
+			this->button5->Click += gcnew System::EventHandler(this, &MyForm::button5_Click);
+			// 
+			// button6
+			// 
+			this->button6->Location = System::Drawing::Point(553, 654);
+			this->button6->Name = L"button6";
+			this->button6->Size = System::Drawing::Size(75, 23);
+			this->button6->TabIndex = 53;
+			this->button6->Text = L"Расчет";
+			this->button6->UseVisualStyleBackColor = true;
+			this->button6->Click += gcnew System::EventHandler(this, &MyForm::button6_Click);
+			// 
+			// pictureBox1
+			// 
+			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
+			this->pictureBox1->Location = System::Drawing::Point(42, 46);
+			this->pictureBox1->Name = L"pictureBox1";
+			this->pictureBox1->Size = System::Drawing::Size(262, 270);
+			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBox1->TabIndex = 54;
+			this->pictureBox1->TabStop = false;
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(950, 677);
+			this->ClientSize = System::Drawing::Size(1001, 718);
+			this->Controls->Add(this->pictureBox1);
+			this->Controls->Add(this->button6);
+			this->Controls->Add(this->button5);
+			this->Controls->Add(this->groupBox6);
+			this->Controls->Add(this->groupBox5);
 			this->Controls->Add(this->groupBox4);
 			this->Controls->Add(this->button4);
 			this->Controls->Add(this->groupBox3);
@@ -1195,8 +1522,9 @@ private: System::Windows::Forms::Label^ label81;
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->button2);
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"MyForm";
-			this->Text = L"MyForm";
+			this->Text = L"WCpr";
 			this->groupBox1->ResumeLayout(false);
 			this->groupBox1->PerformLayout();
 			this->groupBox2->ResumeLayout(false);
@@ -1205,6 +1533,11 @@ private: System::Windows::Forms::Label^ label81;
 			this->groupBox3->PerformLayout();
 			this->groupBox4->ResumeLayout(false);
 			this->groupBox4->PerformLayout();
+			this->groupBox5->ResumeLayout(false);
+			this->groupBox5->PerformLayout();
+			this->groupBox6->ResumeLayout(false);
+			this->groupBox6->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 
 		}
@@ -1343,7 +1676,7 @@ private: System::Windows::Forms::Label^ label81;
 
 		uCostsSumIni();
 		extern std::vector<int> ucosts;
-		float UCosts = costsSum(ucosts, 18) / A;
+		float UCosts = costsSum(ucosts, 17) / A;
 		label71->Text = UCosts.ToString();
 
 		eCostsSumIni();
@@ -1355,8 +1688,58 @@ private: System::Windows::Forms::Label^ label81;
 		float eCosts = esum * 200 / A;
 		label76->Text = eCosts.ToString();
 		
-		float ore1pri = RareCosts + UCosts + eCosts;
-		label77->Text = ore1pri.ToString();
+		float ore2vir = RareCosts + UCosts + eCosts;
+		label77->Text = ore2vir.ToString();
+
+		float ore2rash = ((oregold2 * 10000 + oresilver2 * 100 + orecopper2) * 500) / A;
+		label84->Text = ore2rash.ToString();
+
+		float ore2pri = ore2vir - ore2rash;
+		label82->Text = ore2pri.ToString();
+}
+    private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
+	float A = 10000;
+
+	CostsSumIni();
+	extern std::vector<int> costs;
+	float RareCosts = costsSum(costs, 5) / A;
+	label86->Text = RareCosts.ToString();
+
+	uCostsSumIni();
+	extern std::vector<int> ucosts;
+	float UCosts = costsSum(ucosts, 18) / A;
+	label87->Text = UCosts.ToString();
+
+	float ore1vir = RareCosts + UCosts;
+	label88->Text = ore1vir.ToString();
+
+	float ore1rash = ((oregold1 * 10000 + oresilver1 * 100 + orecopper1) * 500) / A;
+	label89->Text = ore1rash.ToString();
+
+	float ore1pri = ore1vir - ore1rash;
+	label90->Text = ore1pri.ToString();
+}
+private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
+	float A = 10000;
+
+	CostsSumIni();
+	extern std::vector<int> costs;
+	float RareCosts = costsSum(costs, 1) / A;
+	label97->Text = RareCosts.ToString();
+
+	uCostsSumIni();
+	extern std::vector<int> ucosts;
+	float UCosts = costsSum(ucosts, 23) / A;
+	label98->Text = UCosts.ToString();
+
+	float ore3vir = RareCosts + UCosts;
+	label99->Text = ore3vir.ToString();
+
+	float ore3rash = ((oregold3 * 10000 + oresilver3 * 100 + orecopper3) * 500) / A;
+	label100->Text = ore3rash.ToString();
+
+	float ore3pri = ore3vir - ore3rash;
+	label101->Text = ore3pri.ToString();
 }
 };
 }
